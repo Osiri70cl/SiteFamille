@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import Connection from "./pages/Connection";
 import Inscription from "./pages/Inscription";
 import Recettes from "./pages/Recettes";
+import Singlerecette from "./pages/Singlerecette";
 import Photos from "./pages/Photos";
 import Randos from "./pages/Randos";
 import Latest from "./pages/Latest";
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/connection" element={<Connection />} />
         <Route path="/inscription" element={<Inscription />} />
         <Route path="recettes" element={<Recettes />} />
+        <Route path="products/:productId" element={<Singlerecette />} />
         <Route path="photos" element={<Photos />} />
         <Route path="randonnee" element={<Randos />} />
         <Route path="latest" element={<Latest />} />
