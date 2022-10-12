@@ -50,6 +50,7 @@ const ContactForm = () => {
           <button type="submit"> Envoyer </button>
         </div>
       </form>
+      <h4 className="webmasterContact">Webmaster : remi.pince@outlook.com</h4>
     </main>
   );
 };

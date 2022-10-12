@@ -1,4 +1,4 @@
-.contact {
+.connection {
   height: 100vh;
   margin-bottom: 50px;
   background-color: $color-2;
@@ -17,15 +17,6 @@
     max-width: 500px;
     padding: 0 20px;
     & input {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: none;
-      border-radius: 5px;
-      font-size: 1.2rem;
-      outline: none;
-    }
-    & textarea {
       width: 100%;
       padding: 10px;
       margin: 10px 0;
@@ -57,16 +48,15 @@
     text-align: center;
     margin-bottom: 4rem;
   }
-  &__description {
-    width: 75%;
-    font-size: 30px;
-    color: $white;
-    text-align: center;
-    margin-bottom: 4rem;
-  }
 }
 
-.webmasterContact {
-  margin: 50px 0px;
+.inscriptionLink {
   color: $white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-top: 4rem;
+  &:hover {
+    color: rgb(138, 0, 0);
+    border-bottom: 2px solid rgb(138, 0, 0);
+  }
 }

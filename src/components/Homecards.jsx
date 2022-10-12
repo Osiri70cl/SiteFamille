@@ -13,9 +13,7 @@ const Homecards = () => {
       </Link>
       <Link to="/latest">
         <div className="card">
-          <div className="card__bg__img">
-            <img src="./photoPlatCard.png" alt="plat du jour" />
-          </div>
+          <div className="card__bg__img platJour"></div>
         </div>
       </Link>
       <Link to="/frigo">
@@ -27,16 +25,12 @@ const Homecards = () => {
       </Link>
       <Link to="/photos">
         <div className="card">
-          <div className="card__bg__img">
-            <img src="./photoFruitCard.png" alt="fruit du jour" />
-          </div>
+          <div className="card__bg__img fruit"></div>
         </div>
       </Link>
       <Link to="/randonnee">
         <div className="card">
-          <div className="card__bg__img">
-            <img src="./photoRandoCard.png" alt="rando" />
-          </div>
+          <div className="card__bg__img rando"></div>
         </div>
       </Link>
     </article>

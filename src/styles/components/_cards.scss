@@ -33,5 +33,20 @@ article {
       font-size: 40px;
       padding: 30px;
     }
+    .fruit {
+      background-image: url("../../assets/img/photoFruitCard.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .platJour {
+      background-image: url("../../assets/img/photoPlatCard.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .rando {
+      background-image: url("../../assets/img/photoRandoCard.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 }
