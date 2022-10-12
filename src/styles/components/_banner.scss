@@ -1,0 +1,34 @@
+.thumb {
+  width: 100%;
+  height: 728px;
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  &__img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: inherit;
+  }
+
+  &__title {
+    position: absolute;
+    top: 0;
+    font-size: 60px;
+    font-weight: 500;
+    margin: 40px 30px;
+    color: $white;
+    box-sizing: inherit;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+  }
+}

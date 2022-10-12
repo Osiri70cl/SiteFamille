@@ -1,0 +1,37 @@
+article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  .card {
+    height: 295px;
+    width: 296px;
+    border: 3px solid $color-1;
+    &__bg {
+      &__white {
+        height: 100%;
+        width: 100%;
+        background-color: $white;
+        color: $color-2;
+      }
+      &__green {
+        height: 100%;
+        width: 100%;
+        background-color: $color-1;
+        color: $white;
+      }
+      &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    &__title {
+      font-size: 40px;
+      padding: 30px;
+    }
+  }
+}

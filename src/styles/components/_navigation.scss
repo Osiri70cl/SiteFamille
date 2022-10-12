@@ -1,0 +1,42 @@
+.navigation {
+  color: $color-2;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  margin: 40px 100px;
+  ul {
+    display: flex;
+
+    a {
+      text-decoration: none;
+      padding: 10px;
+
+      li {
+        color: $color-2;
+        transition: 0.2s;
+        cursor: pointer;
+
+        &:hover {
+          color: $color-1;
+        }
+      }
+    }
+    .nav-active {
+      position: relative;
+
+      &:focus {
+        content: "";
+        border-bottom: 2px solid $color-1;
+      }
+    }
+  }
+  .partie {
+    &__gauche {
+      font-size: 40px;
+    }
+    &__droite {
+      font-size: 25px;
+    }
+  }
+}
