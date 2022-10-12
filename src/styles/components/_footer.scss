@@ -1,0 +1,19 @@
+.footer {
+  position: bottom;
+  background-color: black;
+  color: white;
+  height: 180px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .footerBrand {
+    margin-top: 66px;
+    margin-bottom: 28.56px;
+  }
+  .footerText {
+    margin-bottom: 29px;
+  }
+}
