@@ -24,9 +24,9 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/connection" element={<Connection />} />
         <Route path="/inscription" element={<Inscription />} />
-        <Route path="recettes/:recetteId" element={<Recettes />} />
-        <Route path="photos/:photoId" element={<Photos />} />
-        <Route path="randonnee/:randoId" element={<Randos />} />
+        <Route path="recettes" element={<Recettes />} />
+        <Route path="photos" element={<Photos />} />
+        <Route path="randonnee" element={<Randos />} />
         <Route path="latest" element={<Latest />} />
         <Route path="frigo" element={<Frigo />} />
       </Routes>

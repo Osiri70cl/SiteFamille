@@ -2,3 +2,19 @@
   margin: 0px 100px;
   height: 100%;
 }
+
+.homeSection {
+  margin-bottom: 40px;
+}
+
+.avenir {
+  font-size: 100px;
+  color: $color-2;
+}
+
+.centerDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Navigation = () => {
   return (
     <header className="navigation">
-      <ul>
+      <ul className="partie__gauche">
         <NavLink
           exact
           to="/recettes"
@@ -27,7 +27,7 @@ const Navigation = () => {
           <li>| Photo</li>
         </NavLink>
       </ul>
-      <ul>
+      <ul className="partie__droite">
         <NavLink
           exact
           to="/"

@@ -1,52 +1,34 @@
-.banner {
-  border-radius: 10px;
+.thumb {
+  width: 100%;
+  height: 728px;
   position: relative;
-  margin: 20px 0;
-  height: 111px;
-  @include media-query(medium) {
-    height: 167px;
-  }
-  @include media-query(large) {
-    height: 223px;
-  }
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
 
   &__img {
-    border-radius: inherit;
+    width: inherit;
+    height: inherit;
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    border-radius: inherit;
+  }
+
+  &__title {
+    position: absolute;
+    top: 0;
+    font-size: 60px;
+    font-weight: 500;
+    margin: 40px 30px;
+    color: $white;
+    box-sizing: inherit;
   }
 
   &__overlay {
-    background-color: $color-3;
     position: absolute;
     top: 0;
-    border-radius: 10px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
     height: 100%;
     width: 100%;
-    opacity: 0.3;
-  }
-
-  &__text {
-    position: absolute;
-    top: 0;
-    font-size: 24px;
-    color: $white;
-    font-weight: 500;
-    margin: 0;
-    padding-left: 16px;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-
-    @include media-query(medium) {
-      font-size: 36px;
-      justify-content: center;
-    }
-    @include media-query(large) {
-      font-size: 48px;
-    }
+    border-radius: inherit;
   }
 }
