@@ -1,0 +1,124 @@
+[
+  {
+    "id": "1",
+    "title": "Rôti de porc au miel",
+    "cover": "https://resize.elle.fr/original/var/plain_site/storage/images/elle-a-table/les-dossiers-de-la-redaction/dossier-de-la-redac/plat-familial-automne/95643268-1-fre-FR/Stop-aux-preparations-alambiquees-je-veux-un-plat-familial-d-automne-tout-en-un-!.jpg",
+    "pictures": [
+      "https://resize.elle.fr/original/var/plain_site/storage/images/elle-a-table/les-dossiers-de-la-redaction/dossier-de-la-redac/plat-familial-automne/95643268-1-fre-FR/Stop-aux-preparations-alambiquees-je-veux-un-plat-familial-d-automne-tout-en-un-!.jpg"
+    ],
+    "description": "Un rôti de porc au miel, c'est un plat familial qui réunit toute la famille autour d'une table. C'est un plat qui se prépare facilement et qui se mange avec plaisir. C'est un plat qui se déguste avec des pommes de terre et des légumes. C'est un plat qui se déguste avec un vin rouge.",
+    "rating": "5",
+    "equipments": ["Boucher", "Four"],
+    "tags": ["Batignolle", "Montmartre"]
+  },
+  {
+    "id": "2",
+    "title": "Plat mijoté façon Enflish Breakfast",
+    "cover": "https://www.leporc.com/sites/default/files/recettes/plat_mijote_facon_english_breakfast.jpg",
+    "pictures": [
+      "https://www.leporc.com/sites/default/files/recettes/plat_mijote_facon_english_breakfast.jpg"
+    ],
+    "description": [
+      "4 saucisses de porc",
+      "4 tranches de poitrine de porc",
+      "2 c. à soupe d’huile d’olive",
+      " 4 oeufs",
+      "1 conserve de 530 g de haricots blancs cuisinés à la tomate",
+      "1 conserve de 780 g de tomates pelées",
+      "200 g de champignons de Paris entiers"
+    ],
+    "rating": "1",
+    "equipments": ["Plaques de cuissons", "Four", "Casserole", "Poêle"],
+    "tags": ["Canal Saint Martin", "République", "Appartement"]
+  },
+  {
+    "id": "3",
+    "title": "Oeuf au plat : Recette simple et gourmande",
+    "cover": "https://www.duracuire.com/wp-content/uploads/Oeuf-au-plat-1140x641.jpg",
+    "pictures": [
+      "https://www.duracuire.com/wp-content/uploads/Oeuf-au-plat-1140x641.jpg"
+    ],
+    "description": "Comme avec l’oeuf au plat, les recettes les plus simples sont souvent les meilleures ! Pour une recette d’oeuf au plat parfaitement réussie, suivez le guide !",
+
+    "rating": "3",
+    "equipments": [
+      "1 gros œuf",
+      "1 noix de beurre",
+      "1 pincée de sel",
+      "1 pincée de poivre (facultatif)"
+    ],
+    "tags": ["Buttes Chaumont", "Laumière", "Studio"]
+  },
+  {
+    "id": "4",
+    "title": "Plat de poissons variés, servi avec une salsa verte fraîche",
+    "cover": "https://www.santamariaworld.com/optimized/recipe-large/globalassets/netherlands/recepten/85.-gemengde-visschotel-geserveerd-met-een-frisse-groene-salsa.jpg",
+    "pictures": [
+      "https://www.santamariaworld.com/optimized/recipe-large/globalassets/netherlands/recepten/85.-gemengde-visschotel-geserveerd-met-een-frisse-groene-salsa.jpg"
+    ],
+    "description": "Un savoureux plat de saumon, de poissons blancs et d'écrevisses, dominé par la saveur surprenante du citron vert et du chili relevé.",
+
+    "rating": "3",
+    "equipments": [
+      "1 cuillère à soupe Santa Maria Chili Explosion",
+      "1 cuillère à soupe Santa Maria Lime Pepper",
+      "300 g filet de poisson blanc, en 4 morceaux",
+      "300 g filet de saumon, en 4 morceaux",
+      "20 pièces écrevisses",
+      "1 cuillère à soupe jus de citron vert",
+      "1 cuillère à soupe huile de cuisson"
+    ],
+    "tags": ["Parmentier", "Marais", "Parc", "Night Life"]
+  },
+  {
+    "id": "5",
+    "title": "La Paêlla mummm",
+    "cover": "http://www.lesfoodies.com/_recipeimage/256119/mon-plat-prefere-paella-mummm.jpg",
+    "pictures": [
+      "http://www.lesfoodies.com/_recipeimage/256119/mon-plat-prefere-paella-mummm.jpg"
+    ],
+    "description": [
+      "Commencer par détailler les poivrons en lam.",
+      "Elles, émincer l'oignon et la gousse d'ail. Réserver.",
+
+      " Découper les merguez en tronçons et le poulet en cube. Réserver.",
+
+      "Si les haricots et les petits pois sont frais, faire blanchir 5 min dans l'eau salée et refroidir.",
+
+      " Dans un wok, faire saisir les merguez, retirer du wok. Dans la graisse faire dorer 10 min les poivrons, l'oignon et la gousse d'ail.",
+
+      "    Ensuite ajouter le poulet, poursuivre la cuisson 5 min, ajouter le coulis de tomate et l'épice à paella, selon votre goût.",
+
+      "Enfin ajouter le riz, laisser rissoler quelques minutes. Ajouter le bouillon petit à petit.",
+
+      "Couvrir et laisser mijoter à feu doux pendant 20 min. Rajouter un peu d'eau si besoin.",
+
+      " A ce moment rajouter les moules, les haricots, les petits pois et les merguez, poursuivre la cuisson 7 min.",
+      "Servir en mettant le plat sur la table, décorez avec quelques crevettes roses que vous pourrez ajouter lors de la cuisson de la paella ou en décoration a la fin."
+    ],
+
+    "rating": "5",
+    "equipments": ["Poêle", "Wok", "Casserole", "Couteau"],
+    "tags": ["Goncourt", "Proche commerces"]
+  },
+  {
+    "id": "6",
+    "title": "Plats en sauce : des recettes pour saucer son pain",
+    "cover": "https://img.mesrecettesfaciles.fr/wp-content/uploads/2015/05/Poulet-au-curry.webp",
+    "pictures": [
+      "https://img.mesrecettesfaciles.fr/wp-content/uploads/2015/05/Poulet-au-curry.webp"
+    ],
+    "description": "Quand on reçoit pour dîner ou pour déjeuner, on aime préparer des plats en sauce. Ce sont souvent des plats que tout le monde aime et qui se mangent forcément avec une bonne tradition du boulanger pour finir son assiette. Pour que vos invités dévorent leur repas et laissent leurs assiettes totalement « propres », nous vous faisons une petite liste de nos meilleurs plats en sauce. ",
+
+    "rating": "5",
+    "equipments": [
+      "Osso bucco",
+      "coq au vin",
+      "blanquette de veau",
+      "poulet au curry",
+      "sauté de veau",
+      "poulet basquaise"
+    ],
+    "tags": ["Montmartre", "Culture", "Charme"]
+  }
+]

@@ -1,40 +1,27 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import products from "../__mocks__/data.json";
+import recettes from "../__mocks__/dataRecette.json";
 
 import Rating from "../components/Rating";
-import Host from "../components/Host";
-import Slider from "../components/Slider";
-import Tags from "../components/Tags";
 import Collapse from "../components/Collapse";
 
 const Singlerecette = () => {
-  const { productId } = useParams();
-  const product = products.find((product) => product.id === productId);
-  const { title, location, rating, host, equipments, description, pictures } =
-    product;
+  const { recetteId } = useParams();
+  const recette = recettes.find((recette) => recette.id === recetteId);
+  const { title, rating, equipments, description, pictures } = recette;
 
   return (
     <main className="singleproduct">
-      <Slider slides={pictures} />
-      <div className="singleproduct__content">
-        <div className="singleproduct__informations">
-          <h1 className="singleproduct__title">{title}</h1>
-          <p className="singleproduct__location">{location}</p>
-          <div className="singleproduct__tags">
-            {product.tags.map((tag, index) => (
-              <Tags key={index} getTag={tag} />
-            ))}
-          </div>
-        </div>
-        <div className="singleproduct__rating-and-host">
-          <Rating rating={rating} />
-          <Host host={host} />
-        </div>
+      <div className="singleproduct__informations">
+        <h1 className="informations__title">{title}</h1>
+        <Rating rating={rating} />
       </div>
-      <div className="singleproduct__dropdowns">
-        <Collapse title="description" content={description} />
-        <Collapse title="équipement" content={equipments} />
+      <div className="singleproduct__content">
+        <div className="singleproduct__dropdowns">
+          <Collapse title="description" content={description} />
+          <Collapse title="équipement" content={equipments} />
+        </div>
+        <img src={pictures} alt="" className="singleproduct__img" />
       </div>
     </main>
   );

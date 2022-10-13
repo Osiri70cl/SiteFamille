@@ -1,12 +1,22 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+import Cards from "../components/Cards";
+import products from "../__mocks__/dataPhoto.json";
 
 const Photos = () => {
   return (
-    <main className="main">
-      <div className="centerDiv">
-        <h1 className="avenir"> A VENIR - COMING SOON</h1>
-      </div>
-    </main>
+    <section className="home__products">
+      {products.map((product) => {
+        return (
+          <article key={product.id}>
+            <Link to={`/products/${product.id}`}>
+              <Cards image={product.cover} title={product.title} />
+            </Link>
+          </article>
+        );
+      })}
+    </section>
   );
 };
 

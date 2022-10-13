@@ -7,6 +7,8 @@ import Connection from "./pages/Connection";
 import Inscription from "./pages/Inscription";
 import Recettes from "./pages/Recettes";
 import Singlerecette from "./pages/Singlerecette";
+// import Singlerando from "./pages/Singlerando";
+// import Singlephoto from "./pages/Singlephoto";
 import Photos from "./pages/Photos";
 import Randos from "./pages/Randos";
 import Latest from "./pages/Latest";
@@ -21,12 +23,15 @@ const App = () => {
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/SiteFamille" element={<Home />} />
         <Route path="*" element={<Error />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/connection" element={<Connection />} />
         <Route path="/inscription" element={<Inscription />} />
         <Route path="recettes" element={<Recettes />} />
-        <Route path="products/:productId" element={<Singlerecette />} />
+        <Route path="recettes/:recetteId" element={<Singlerecette />} />
+        {/* <Route path="products/:productId" element={<Singlephoto />} />
+        <Route path="products/:productId" element={<Singlerando />} /> */}
         <Route path="photos" element={<Photos />} />
         <Route path="randonnee" element={<Randos />} />
         <Route path="latest" element={<Latest />} />

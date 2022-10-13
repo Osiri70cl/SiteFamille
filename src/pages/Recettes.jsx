@@ -2,16 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import Cards from "../components/Cards";
-import products from "../__mocks__/data.json";
+import recettes from "../__mocks__/dataRecette.json";
 
 const Recettes = () => {
   return (
     <section className="home__products">
-      {products.map((product) => {
+      {recettes.map((recette) => {
         return (
-          <article key={product.id}>
-            <Link to={`/products/${product.id}`}>
-              <Cards image={product.cover} title={product.title} />
+          <article key={recette.id}>
+            <Link to={`/recettes/${recette.id}`}>
+              <Cards image={recette.cover} title={recette.title} />
             </Link>
           </article>
         );
