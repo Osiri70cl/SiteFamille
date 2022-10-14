@@ -2,7 +2,7 @@
   position: relative;
 
   &__active-picture {
-    height: 255px;
+    height: 700px;
     width: 100%;
     transform: scale(1);
     transition: transform 300ms;
@@ -10,13 +10,13 @@
       height: 295px;
     }
     @include media-query(medium) {
-      height: 335px;
+      height: 500px;
     }
     @include media-query(large) {
-      height: 375px;
+      height: 700px;
     }
     @include media-query(xlarge) {
-      height: 415px;
+      height: 700px;
     }
   }
 
@@ -48,6 +48,7 @@
     height: 100%;
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
 
   &__next {
