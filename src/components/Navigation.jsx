@@ -7,7 +7,7 @@ const Navigation = () => {
       <ul className="partie__gauche">
         <NavLink
           exact
-          to="/recettes"
+          to="/categorie"
           className={(nav) => (nav.isActive ? "nav-active" : "")}
         >
           <li> Cuisine</li>
@@ -21,7 +21,7 @@ const Navigation = () => {
         </NavLink>
         <NavLink
           exact
-          to="/photos"
+          to="/photo"
           className={(nav) => (nav.isActive ? "nav-active" : "")}
         >
           <li>| Photo</li>

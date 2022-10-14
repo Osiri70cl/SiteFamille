@@ -3,12 +3,12 @@ import { useParams } from "react-router-dom";
 import recettes from "../__mocks__/dataRecette.json";
 
 import Rating from "../components/Rating";
-import Collapse from "../components/Collapse";
 
 const Singlerecette = () => {
   const { recetteId } = useParams();
   const recette = recettes.find((recette) => recette.id === recetteId);
-  const { title, rating, equipments, description, pictures } = recette;
+  const { title, rating, ingredient, instruction, description, pictures } =
+    recette;
 
   return (
     <main className="singleproduct">
@@ -17,11 +17,10 @@ const Singlerecette = () => {
         <Rating rating={rating} />
       </div>
       <div className="singleproduct__content">
-        <div className="singleproduct__dropdowns">
-          <Collapse title="description" content={description} />
-          <Collapse title="équipement" content={equipments} />
-        </div>
+        <div className="singleproduct__text">{description}</div>
         <img src={pictures} alt="" className="singleproduct__img" />
+        <div className="singleproduct__text">{ingredient}</div>
+        <div className="singleproduct__text">{instruction}</div>
       </div>
     </main>
   );

@@ -28,15 +28,17 @@
 
   &__content {
     margin-top: 20px;
-    display: flex;
-    @include media-query(large) {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 15px;
-    }
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  &__text {
+    margin: auto;
   }
   &__img {
-    width: 50%;
+    width: 100%;
     height: 300px;
     object-fit: contain;
   }
@@ -51,21 +53,6 @@
     }
     @include media-query(large) {
       font-size: 18px;
-    }
-  }
-  &__tags {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  &__rating-and-host {
-    margin-top: 5px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    @include media-query(large) {
-      flex-direction: column-reverse;
-      justify-content: space-around;
-      margin: 0;
     }
   }
 }

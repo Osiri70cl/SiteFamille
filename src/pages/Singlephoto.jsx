@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import products from "../__mocks__/dataPhoto.json";
+import photos from "../__mocks__/dataPhoto.json";
 
 import Rating from "../components/Rating";
 import Host from "../components/Host";
@@ -9,10 +9,10 @@ import Tags from "../components/Tags";
 import Collapse from "../components/Collapse";
 
 const Singlephoto = () => {
-  const { productId } = useParams();
-  const product = products.find((product) => product.id === productId);
+  const { photoId } = useParams();
+  const photo = photos.find((photo) => photo.id === photoId);
   const { title, location, rating, host, equipments, description, pictures } =
-    product;
+    photo;
 
   return (
     <main className="singleproduct">
@@ -22,7 +22,7 @@ const Singlephoto = () => {
           <h1 className="singleproduct__title">{title}</h1>
           <p className="singleproduct__location">{location}</p>
           <div className="singleproduct__tags">
-            {product.tags.map((tag, index) => (
+            {photo.tags.map((tag, index) => (
               <Tags key={index} getTag={tag} />
             ))}
           </div>

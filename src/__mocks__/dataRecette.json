@@ -6,9 +6,28 @@
     "pictures": [
       "https://resize.elle.fr/original/var/plain_site/storage/images/elle-a-table/les-dossiers-de-la-redaction/dossier-de-la-redac/plat-familial-automne/95643268-1-fre-FR/Stop-aux-preparations-alambiquees-je-veux-un-plat-familial-d-automne-tout-en-un-!.jpg"
     ],
-    "description": "Un rôti de porc au miel, c'est un plat familial qui réunit toute la famille autour d'une table. C'est un plat qui se prépare facilement et qui se mange avec plaisir. C'est un plat qui se déguste avec des pommes de terre et des légumes. C'est un plat qui se déguste avec un vin rouge.",
+    "description": [
+      "Recette de Famille - modifiée.",
+      "Temps de préparation: 20 mn",
+      "Temps de cuisson: 55 à 60 mn",
+      "Les petits plus:",
+      "Pour réaliser le fond de poisson, prendre des crevettes, demander des têtes et arêtes au poissonnier et prendre des poissons pas cher type cabillaud.",
+      "Si vous réalisez un plat avec des crevettes utilisez les carapaces et têtes sinon achetez des très petites crevettes qui seront perdues. "
+    ],
     "rating": "5",
-    "equipments": ["Boucher", "Four"],
+    "ingredient": ["Boucher", "Four"],
+    "instruction": [
+      "Détailler les légumes en cubes assez grossier. ",
+      "Préparer le fond de poisson. Faire revenir les crevettes dans un faitout jusqu’à coloration rouge. ",
+      "Arroser les avec le jus de citron et mettre les citrons dans le faitout. ",
+      "Retirer les crevettes et jeter les autres poissons dans le faitout. Rajouter les légumes et faire revenir à feu moyen, continuer la cuisson jusqu’a brunissement des oignons.",
+      "Pendant ce temps, décortiquez les crevettes, les réserver pour être cuisinées dans une recette. Jetez les carcasses dans le faitout. ",
+      "Rajouter le vin blanc, 500 ml d’eau et faites réduire de moitié. Filtrer au chinois et réserver le liquide. Jeter les poissons. ",
+      "Dans le faitout faire revenir à feu vif la pulpe de tomate en remuant fréquemment afin qu’elle attache un peu et caramélise. Déglacer avec 10 cl d’armagnac, laisser cuire a feu moyen 3 mn. ",
+      "Rajouter le liquide réservé. Faire cuire à feu doux pour que la préparation frémisse, pendant 15 mn.",
+      "Passer au blender. ",
+      "Au moment de cuisiner un homard, une lotte a l’Armoricaine vous rectifierez la sauce et la lierez à la Maïzena. "
+    ],
     "tags": ["Batignolle", "Montmartre"]
   },
   {
@@ -28,7 +47,8 @@
       "200 g de champignons de Paris entiers"
     ],
     "rating": "1",
-    "equipments": ["Plaques de cuissons", "Four", "Casserole", "Poêle"],
+    "ingredient": ["Plaques de cuissons", "Four", "Casserole", "Poêle"],
+    "instruction": ["1 - Poêle", "2 - Wok", "3 - Casserole", "4 - Couteau"],
     "tags": ["Canal Saint Martin", "République", "Appartement"]
   },
   {
@@ -41,12 +61,13 @@
     "description": "Comme avec l’oeuf au plat, les recettes les plus simples sont souvent les meilleures ! Pour une recette d’oeuf au plat parfaitement réussie, suivez le guide !",
 
     "rating": "3",
-    "equipments": [
+    "ingredient": [
       "1 gros œuf",
       "1 noix de beurre",
       "1 pincée de sel",
       "1 pincée de poivre (facultatif)"
     ],
+    "instruction": ["1 - Poêle", "2 - Wok", "3 - Casserole", "4 - Couteau"],
     "tags": ["Buttes Chaumont", "Laumière", "Studio"]
   },
   {
@@ -59,7 +80,7 @@
     "description": "Un savoureux plat de saumon, de poissons blancs et d'écrevisses, dominé par la saveur surprenante du citron vert et du chili relevé.",
 
     "rating": "3",
-    "equipments": [
+    "ingredient": [
       "1 cuillère à soupe Santa Maria Chili Explosion",
       "1 cuillère à soupe Santa Maria Lime Pepper",
       "300 g filet de poisson blanc, en 4 morceaux",
@@ -68,6 +89,7 @@
       "1 cuillère à soupe jus de citron vert",
       "1 cuillère à soupe huile de cuisson"
     ],
+    "instruction": ["1 - Poêle", "2 - Wok", "3 - Casserole", "4 - Couteau"],
     "tags": ["Parmentier", "Marais", "Parc", "Night Life"]
   },
   {
@@ -98,7 +120,8 @@
     ],
 
     "rating": "5",
-    "equipments": ["Poêle", "Wok", "Casserole", "Couteau"],
+    "ingredient": ["Poêle", "Wok", "Casserole", "Couteau"],
+    "instruction": ["1 - Poêle", "2 - Wok", "3 - Casserole", "4 - Couteau"],
     "tags": ["Goncourt", "Proche commerces"]
   },
   {
@@ -111,7 +134,7 @@
     "description": "Quand on reçoit pour dîner ou pour déjeuner, on aime préparer des plats en sauce. Ce sont souvent des plats que tout le monde aime et qui se mangent forcément avec une bonne tradition du boulanger pour finir son assiette. Pour que vos invités dévorent leur repas et laissent leurs assiettes totalement « propres », nous vous faisons une petite liste de nos meilleurs plats en sauce. ",
 
     "rating": "5",
-    "equipments": [
+    "ingredient": [
       "Osso bucco",
       "coq au vin",
       "blanquette de veau",
@@ -119,6 +142,7 @@
       "sauté de veau",
       "poulet basquaise"
     ],
+    "instruction": ["1 - Poêle", "2 - Wok", "3 - Casserole", "4 - Couteau"],
     "tags": ["Montmartre", "Culture", "Charme"]
   }
 ]

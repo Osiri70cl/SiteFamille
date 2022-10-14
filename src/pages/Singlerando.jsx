@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import products from "../__mocks__/dataRando.json";
+import randos from "../__mocks__/dataRando.json";
 
 import Rating from "../components/Rating";
 import Host from "../components/Host";
@@ -9,10 +9,10 @@ import Tags from "../components/Tags";
 import Collapse from "../components/Collapse";
 
 const Singlerando = () => {
-  const { productId } = useParams();
-  const product = products.find((product) => product.id === productId);
+  const { randoId } = useParams();
+  const rando = randos.find((rando) => rando.id === randoId);
   const { title, location, rating, host, equipments, description, pictures } =
-    product;
+    rando;
 
   return (
     <main className="singleproduct">
@@ -22,7 +22,7 @@ const Singlerando = () => {
           <h1 className="singleproduct__title">{title}</h1>
           <p className="singleproduct__location">{location}</p>
           <div className="singleproduct__tags">
-            {product.tags.map((tag, index) => (
+            {rando.tags.map((tag, index) => (
               <Tags key={index} getTag={tag} />
             ))}
           </div>
