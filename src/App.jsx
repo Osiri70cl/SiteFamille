@@ -5,7 +5,10 @@ import Error from "./pages/Error";
 import Contact from "./pages/Contact";
 import Connection from "./pages/Connection";
 import Inscription from "./pages/Inscription";
-import Recettes from "./pages/Recettes";
+import Entree from "./pages/Entree";
+import Plat from "./pages/Plat";
+import Vin from "./pages/Vin";
+import Dessert from "./pages/Dessert";
 import Singlerecette from "./pages/Singlerecette";
 import Singlerando from "./pages/Singlerando";
 import Singlephoto from "./pages/Singlephoto";
@@ -30,7 +33,10 @@ const App = () => {
         <Route path="/connection" element={<Connection />} />
         <Route path="/inscription" element={<Inscription />} />
         <Route path="/categorie" element={<Categorie />} />
-        <Route path="recettes" element={<Recettes />} />
+        <Route path="entree" element={<Entree />} />
+        <Route path="plat" element={<Plat />} />
+        <Route path="vin" element={<Vin />} />
+        <Route path="dessert" element={<Dessert />} />
         <Route path="recettes/:recetteId" element={<Singlerecette />} />
         <Route path="photos/:photoId" element={<Singlephoto />} />
         <Route path="randos/:randoId" element={<Singlerando />} />

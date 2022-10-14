@@ -1,0 +1,22 @@
+[
+  {
+    "id": "00a",
+    "title": "Entrée",
+    "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg"
+  },
+  {
+    "id": "00b",
+    "title": "Plat",
+    "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-1.jpg"
+  },
+  {
+    "id": "00c",
+    "title": "Dessert",
+    "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-1.jpg"
+  },
+  {
+    "id": "00d",
+    "title": "Vin",
+    "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-1.jpg"
+  }
+]
