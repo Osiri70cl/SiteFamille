@@ -26,6 +26,12 @@ const Navigation = () => {
         >
           <li>| Photo</li>
         </NavLink>
+        <NavLink
+          to="/frigo"
+          className={(nav) => (nav.isActive ? "nav-active" : "")}
+        >
+          <li>| Frigo</li>
+        </NavLink>
       </ul>
       <ul className="partie__droite">
         <NavLink
@@ -34,12 +40,6 @@ const Navigation = () => {
           className={(nav) => (nav.isActive ? "nav-active" : "")}
         >
           <li>Accueil</li>
-        </NavLink>
-        <NavLink
-          to="/frigo"
-          className={(nav) => (nav.isActive ? "nav-active" : "")}
-        >
-          <li>Frigo</li>
         </NavLink>
         <NavLink
           to="/contact"
