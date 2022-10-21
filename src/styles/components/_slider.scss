@@ -2,7 +2,7 @@
   position: relative;
 
   &__active-picture {
-    height: 700px;
+    height: 100%;
     width: 100%;
     transform: scale(1);
     transition: transform 300ms;
@@ -13,10 +13,10 @@
       height: 500px;
     }
     @include media-query(large) {
-      height: 700px;
+      height: 100%;
     }
     @include media-query(xlarge) {
-      height: 700px;
+      height: 100%;
     }
   }
 
@@ -28,7 +28,7 @@
   &__picture {
     width: inherit;
     height: inherit;
-    object-fit: cover;
+    object-fit: fill;
     border-radius: 10px;
     @include media-query(small) {
       border-radius: 15px;
