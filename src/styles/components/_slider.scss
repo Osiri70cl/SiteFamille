@@ -1,5 +1,8 @@
 .slider {
   position: relative;
+  height: 100%;
+  background-color: $black;
+  padding: 50px 0px;
 
   &__active-picture {
     height: 100%;
@@ -28,7 +31,7 @@
   &__picture {
     width: inherit;
     height: inherit;
-    object-fit: fill;
+    object-fit: contain;
     border-radius: 10px;
     @include media-query(small) {
       border-radius: 15px;
