@@ -1,7 +1,7 @@
 {
   "name": "site-famille-pince",
   "version": "0.1.0",
-  "homepage": "https://osiri70cl.github.io/SiteFamille",
+  "homepage": "https://peppy-cendol-3e0c79.netlify.app",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
