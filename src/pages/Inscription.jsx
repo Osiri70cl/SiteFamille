@@ -31,7 +31,7 @@ const Inscription = () => {
         target="_blank"
       >
         <div>
-          <input type="text" placeholder="Nom Prénom" name="name" required />
+          <input type="text" placeholder="Prénom" name="name" required />
         </div>
         <div>
           <input type="email" placeholder="Email" name="email" required />
