@@ -27,7 +27,6 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/SiteFamille" element={<Home />} />
-        <Route path="*" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/connection" element={<Connection />} />
         <Route path="/inscription" element={<Inscription />} />
@@ -43,6 +42,7 @@ const App = () => {
         <Route path="photo" element={<Photos />} />
         <Route path="latest" element={<Latest />} />
         <Route path="frigo" element={<Frigo />} />
+        <Route path="*" element={<Home />} />
       </Routes>
       <Footer />
     </BrowserRouter>
