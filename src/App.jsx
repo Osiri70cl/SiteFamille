@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Error from "./pages/Error";
 import Contact from "./pages/Contact";
 import Connection from "./pages/Connection";
 import Inscription from "./pages/Inscription";
