@@ -16,6 +16,7 @@ import Photos from "./pages/Photos";
 import Categorie from "./pages/Categorie";
 import Latest from "./pages/Latest";
 import Frigo from "./pages/Frigo";
+import Profil from "./pages/Profil";
 
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/SiteFamille" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/connection" element={<Connection />} />
+        <Route path="/profil" element={<Profil />} />
         <Route path="/inscription" element={<Inscription />} />
         <Route path="/categorie" element={<Categorie />} />
         <Route path="entree" element={<Entree />} />

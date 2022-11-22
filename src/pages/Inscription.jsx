@@ -1,40 +1,66 @@
 import React, { useState } from "react";
+import { account } from "../appwrite/appwriteConfig";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { v4 as uuidv4 } from "uuid";
 
 const Inscription = () => {
-  const [submitted, setSubmitted] = useState(false);
-  const handleSubmit = () => {
-    setTimeout(() => {
-      setSubmitted(true);
-    }, 100);
-  };
+  const navigate = useNavigate();
+  const [user, setUser] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
 
-  if (submitted) {
-    return (
-      <main className="main contact">
-        <h2 className="main__title">Oups !</h2>
-        <div className="main__description">
-          La partie connection / inscription n'est pas encore prête !
-        </div>
-      </main>
+  //signup
+
+  const signupUser = async (e) => {
+    e.preventDefault();
+
+    const promise = account.create(
+      uuidv4(),
+      user.email,
+      user.password,
+      user.name
     );
-  }
+
+    promise.then(
+      function (response) {
+        console.log(response);
+        navigate("/profil"); //success
+      },
+      function (error) {
+        console.log(error); //failure
+      }
+    );
+  };
   return (
     <main className="main connection">
       <h2 className="main__title">
         Inscrivez-vous afin de partager avec la famille !
       </h2>
-      <form
-        action="" // A remplir avec le backend
-        onSubmit={handleSubmit}
-        method="POST"
-        target="_blank"
-      >
+      <form action="#" method="POST">
         <div>
-          <input type="text" placeholder="Prénom" name="name" required />
+          <input
+            type="text"
+            placeholder="Prénom"
+            name="name"
+            required
+            onChange={(e) => {
+              setUser({ ...user, name: e.target.value });
+            }}
+          />
         </div>
         <div>
-          <input type="email" placeholder="Email" name="email" required />
+          <input
+            type="email"
+            placeholder="Email"
+            name="email"
+            required
+            onChange={(e) => {
+              setUser({ ...user, email: e.target.value });
+            }}
+          />
         </div>
         <div>
           <input
@@ -42,10 +68,16 @@ const Inscription = () => {
             placeholder="mot de passe"
             name="password"
             required
+            onChange={(e) => {
+              setUser({ ...user, password: e.target.value });
+            }}
           />
         </div>
         <div>
-          <button type="submit"> S'inscrire </button>
+          <button type="submit" onClick={signupUser}>
+            {" "}
+            S'inscrire{" "}
+          </button>
         </div>
       </form>
       <Link to="/connection">
