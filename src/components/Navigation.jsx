@@ -53,6 +53,12 @@ const Navigation = () => {
         >
           <li>Connexion</li>
         </NavLink>
+        <NavLink
+          to="/profil"
+          className={(nav) => (nav.isActive ? "nav-active" : "")}
+        >
+          <li>Profil</li>
+        </NavLink>
       </ul>
     </header>
   );

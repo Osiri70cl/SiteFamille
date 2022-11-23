@@ -3,7 +3,7 @@ import { Client, Account, Databases } from "appwrite";
 const client = new Client();
 
 client
-  .setEndpoint("http://188.166.123.90/v1")
+  .setEndpoint("https://188.166.123.90/v1")
   .setProject("637774fe15e6df6c4c62"); //  API Endpoint
 
 export const account = new Account(client);

@@ -32,27 +32,21 @@ const Profil = () => {
     <>
       {userDetails ? (
         <div className="profil">
-          <h2 className="profil__title">Profil</h2>
+          <h2 className="profil__title">👥 Votre Profil</h2>
           <div className="profil__container">
-            <div className="profil__container__name">
-              <p className="profil__container__name__title">Nom</p>
-              <p className="profil__container__name__content">
-                {userDetails.name}
-              </p>
-            </div>
-            <div className="profil__container__email">
-              <p className="profil__container__email__title">Email</p>
-              <p className="profil__container__email__content">
-                {userDetails.email}
-              </p>
-            </div>
+            <p className="profil__container__name__content">
+              {userDetails.name}
+            </p>
+            <p className="profil__container__email__content">
+              {userDetails.email}
+            </p>
           </div>
-          <button className="profil__button" onClick={handleLogout}>
+          <button className="profil__btn" onClick={handleLogout}>
             Se déconnecter
           </button>
         </div>
       ) : (
-        <p>
+        <p className="profilUnconnected">
           Vous n'êtes pas connecté. <a href="/connection">Se connecter</a>
         </p>
       )}
