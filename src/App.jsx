@@ -4,10 +4,10 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Connection from "./pages/Connection";
 import Inscription from "./pages/Inscription";
-import Entree from "./pages/Entree";
-import Plat from "./pages/Plat";
-import Vin from "./pages/Vin";
-import Dessert from "./pages/Dessert";
+import Entree from "./pages/categories/Entree";
+import Plat from "./pages/categories/Plat";
+import Vin from "./pages/categories/Vin";
+import Dessert from "./pages/categories/Dessert";
 import Singlerecette from "./pages/Singlerecette";
 import Singlerando from "./pages/Singlerando";
 import Singlephoto from "./pages/Singlephoto";
@@ -33,11 +33,11 @@ const App = () => {
         <Route path="/profil" element={<Profil />} />
         <Route path="/inscription" element={<Inscription />} />
         <Route path="/categorie" element={<Categorie />} />
-        <Route path="entree" element={<Entree />} />
-        <Route path="plat" element={<Plat />} />
-        <Route path="vin" element={<Vin />} />
-        <Route path="dessert" element={<Dessert />} />
-        <Route path="recettes/:recetteId" element={<Singlerecette />} />
+        <Route path="/categorie/entree" element={<Entree />} />/categorie/
+        <Route path="/categorie/plat" element={<Plat />} />
+        <Route path="/categorie/vin" element={<Vin />} />
+        <Route path="/categorie/dessert" element={<Dessert />} />
+        <Route path="/Singlerecette/:recetteId" element={<Singlerecette />} />
         <Route path="photos/:photoId" element={<Singlephoto />} />
         <Route path="randos/:randoId" element={<Singlerando />} />
         <Route path="randonnee" element={<Randos />} />
