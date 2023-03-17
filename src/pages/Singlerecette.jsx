@@ -16,14 +16,20 @@ const Singlerecette = () => {
     fetchRecipe();
   }, [recetteId]);
 
-  console.log(recipe);
 
   return (
-    <main className="singleproduct">
+    <main className="singleRecipe">
       {recipe ? (
         <>
-          <h1>{recipe.title.rendered}</h1>
-          <div dangerouslySetInnerHTML={{ __html: recipe.content.rendered }} />
+          <div className="container">
+            <h1 className="title">{recipe.title.rendered}</h1>
+            <div className="recipe">
+              <div className="recipe_featuredImageContainer">
+                <img className="recipe_featuredImageContainer__img" src={recipe.better_featured_image.source_url} alt="" />
+              </div>
+              <div className="m-wysiwyg" dangerouslySetInnerHTML={{ __html: recipe.content.rendered }} />
+            </div>
+          </div>
         </>
       ) : (
         <p>Loading...</p>

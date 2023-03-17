@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import Cards from "../../components/Cards";
 
@@ -21,9 +21,9 @@ const Recettes = () => {
       <section className="home__products">
         {posts.map(post => (
           <article key={post.id}>
-            <Link to={`recettes/${post.id}`}>
+            <NavLink to={`/Singlerecette/${post.id}`}>
               <Cards id={post.id} image={post.better_featured_image} />
-            </Link>
+            </NavLink>
           </article>
       ))}
       </section>

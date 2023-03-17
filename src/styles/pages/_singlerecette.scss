@@ -1,0 +1,42 @@
+.singleRecipe {
+  background-color: #e5fef1;
+  height: 100%;
+  padding: 24px 0px 120px 0px;
+}
+
+.title {
+  font-size: 28px;
+  text-align: center;
+}
+
+.recipe{
+  margin: 0 auto;
+  padding-bottom: 12px;
+  display: flex;
+  border-radius: 12px;
+  border: 1px solid black;
+  flex-direction: column;
+  width: calc(100% / 12 * 7);
+  background-color: #fff;
+  &_featuredImageContainer{
+    border-bottom: 1px solid black;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    align-self: center;
+     
+  }
+  &_featuredImageContainer__img{
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+
+
+
+
+// wp content
