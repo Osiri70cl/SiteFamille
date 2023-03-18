@@ -1,6 +1,6 @@
 import React from "react";
 
-const Mainbanner = ({ image, title }) => {
+const Mainbanner = ({ image }) => {
   return (
     <div className="banner">
       <img src={image} alt="" className="banner__img" />

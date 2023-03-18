@@ -1,8 +1,8 @@
 import React from "react";
-
-import Mainbanner from "../components/Mainbanner";
-import Homecards from "../components/Homecards";
+import Mainbanner from "../components/MainBanner";
 import image from "../assets/img/PhotoMain.jpg";
+import Homecards from "../components/Homecards";
+
 
 const Home = () => {
   return (

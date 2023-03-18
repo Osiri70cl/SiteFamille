@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <p className="footerText">
-        ⚪ © 2022 SiteFamille ⚪ All rights reserved Rémi.P ⚪
+        ⚪ © 2023 SiteFamille ⚪ All rights reserved Rémi.P ⚪
       </p>
     </footer>
   );

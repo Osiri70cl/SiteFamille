@@ -16,13 +16,6 @@ const Homecards = () => {
           <div className="card__bg__img platJour"></div>
         </div>
       </Link>
-      <Link to="/frigo">
-        <div className="card">
-          <div className="card__bg__green">
-            <h2 className="card__title">Qu'est ce qu'on mange ce soir ?</h2>
-          </div>
-        </div>
-      </Link>
       <Link to="/photo">
         <div className="card">
           <div className="card__bg__img fruit"></div>

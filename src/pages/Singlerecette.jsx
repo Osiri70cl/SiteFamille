@@ -1,49 +1,39 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import { useParams } from "react-router-dom";
-import { useState } from "react";
-import recettes from "../__mocks__/dataRecette.json";
-
-import Rating from "../components/Rating";
-import Dictionnaire from "../components/Dictionnaie";
-// import Mesure from "../components/Mesure";
 
 const Singlerecette = () => {
   const { recetteId } = useParams();
-  const recette = recettes.find((recette) => recette.id === recetteId);
-  const { title, rating, ingredient, instruction, description, pictures } =
-    recette;
+  const [recipe, setRecipe] = useState(null);
 
-  // Pour affichage "modal"
+  useEffect(() => {
+    const fetchRecipe = async () => {
+      const response = await axios.get(
+        `https://www.famillep.remip-project.fr/wp-json/wp/v2/posts/${recetteId}`
+      );
+      setRecipe(response.data);
+    };
+    fetchRecipe();
+  }, [recetteId]);
 
-  const [isShown, setIsShown] = useState(false);
-
-  const handleClick = (event) => {
-    setIsShown((current) => !current);
-  };
 
   return (
-    <main className="singleproduct">
-      <div className="singleproduct__informations">
-        <h1 className="informations__title">{title}</h1>
-        <Rating rating={rating} />
-      </div>
-      <div className="singleproduct__modal">
-        <button className="singleproduct__button" onClick={handleClick}>
-          Dictionnaire culinaire
-        </button>
-        
-        {/* <button className="singleproduct__button" onClick={handleClick}>
-          mesures
-        </button>
-        {isShown && <Mesure />} */}
-      </div>
-      {isShown && <Dictionnaire />}
-      <div className="singleproduct__content">
-        <div className="singleproduct__text">{description}</div>
-        <img src={pictures} alt="" className="singleproduct__img" />
-        <div className="singleproduct__text">{ingredient}</div>
-        <div className="singleproduct__text">{instruction}</div>
-      </div>
+    <main className="singleRecipe">
+      {recipe ? (
+        <>
+          <div className="container">
+            <h1 className="title" dangerouslySetInnerHTML={{ __html: recipe.title.rendered }} />
+            <div className="recipe">
+              {/* <div className="recipe_featuredImageContainer">
+                <img className="recipe_featuredImageContainer__img" src={recipe.better_featured_image.source_url} alt="" />
+              </div> */}
+              <div className="m-wysiwyg" dangerouslySetInnerHTML={{ __html: recipe.content.rendered }} />
+            </div>
+          </div>
+        </>
+      ) : (
+        <p>Loading...</p>
+      )}
     </main>
   );
 };
