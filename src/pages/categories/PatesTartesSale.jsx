@@ -4,12 +4,12 @@ import { NavLink } from "react-router-dom";
 
 import Cards from "../../components/Cards";
 
-const Vin = () => {
+const PatesTartesSale = () => {
     const [posts, setPosts] = useState([]);
   
     useEffect(() => {
       const fetchPosts = async () => {
-        const response = await axios.get('https://www.famillep.remip-project.fr/wp-json/wp/v2/posts?categories=7');
+        const response = await axios.get('https://www.famillep.remip-project.fr/wp-json/wp/v2/posts?categories=5');
         setPosts(response.data);
       };
   
@@ -30,4 +30,4 @@ const Vin = () => {
     );
   }
 
-export default Vin;
+export default PatesTartesSale;

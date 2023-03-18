@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 import Cards from "../../components/Cards";
 
-const Recettes = () => {
+const Entree = () => {
     const [posts, setPosts] = useState([]);
   
     useEffect(() => {
@@ -30,4 +30,4 @@ const Recettes = () => {
     );
   }
 
-export default Recettes;
+export default Entree;

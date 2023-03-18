@@ -1,23 +1,33 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import { NavLink } from "react-router-dom";
 
-import Cards from "../components/Cards";
-import randos from "../__mocks__/dataRando.json";
+import CardsRando from "../components/CardsRando";
 
 const Randos = () => {
-  return (
-    <section className="home__products">
-      {randos.map((product) => {
-        return (
-          <article key={product.id}>
-            <Link to={`/randos/${product.id}`}>
-              <Cards image={product.cover} title={product.title} />
-            </Link>
+  const [randos, setRandos] = useState([]);
+  
+    useEffect(() => {
+      const fetchRandos = async () => {
+        const response = await axios.get('https://www.famillep.remip-project.fr/wp-json/wp/v2/posts?categories=26');
+        setRandos(response.data);
+      };
+  
+      fetchRandos();
+    }, []);
+    console.log(randos);
+  
+    return (
+      <section className="home__products">
+        {randos.map(rando => (
+          <article key={rando.id}>
+            <NavLink to={`/randos/${rando.id}`}>
+              <CardsRando id={rando.id} image={rando.better_featured_image} />
+            </NavLink>
           </article>
-        );
-      })}
-    </section>
-  );
-};
+      ))}
+      </section>
+    );
+  }
 
 export default Randos;

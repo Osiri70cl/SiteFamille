@@ -1,41 +1,37 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import { useParams } from "react-router-dom";
-import randos from "../__mocks__/dataRando.json";
-
-import Rating from "../components/Rating";
-import Host from "../components/Host";
-import Slider from "../components/Slider";
-import Tags from "../components/Tags";
-import Collapse from "../components/Collapse";
 
 const Singlerando = () => {
   const { randoId } = useParams();
-  const rando = randos.find((rando) => rando.id === randoId);
-  const { title, location, rating, host, equipments, description, pictures } =
-    rando;
+  const [rando, setRando] = useState(null);
 
+  useEffect(() => {
+    const fetchRando = async () => {
+      const response = await axios.get(
+        `https://www.famillep.remip-project.fr/wp-json/wp/v2/posts/${randoId}`
+      );
+      setRando(response.data);
+    };
+    fetchRando();
+  }, [randoId]);
   return (
     <main className="singleproduct">
-      <Slider slides={pictures} />
-      <div className="singleproduct__content">
-        <div className="singleproduct__informations">
-          <h1 className="singleproduct__title">{title}</h1>
-          <p className="singleproduct__location">{location}</p>
-          <div className="singleproduct__tags">
-            {rando.tags.map((tag, index) => (
-              <Tags key={index} getTag={tag} />
-            ))}
+            {rando ? (
+        <>
+          <div className="container">
+            <h1 className="title">{rando.title.rendered}</h1>
+            <div className="recipe">
+              {/* <div className="recipe_featuredImageContainer">
+                <img className="recipe_featuredImageContainer__img" src={recipe.better_featured_image.source_url} alt="" />
+              </div> */}
+              <div className="m-wysiwyg" dangerouslySetInnerHTML={{ __html: rando.content.rendered }} />
+            </div>
           </div>
-        </div>
-        <div className="singleproduct__rating-and-host">
-          <Rating rating={rating} />
-          <Host host={host} />
-        </div>
-      </div>
-      <div className="singleproduct__dropdowns">
-        <Collapse title="description" content={description} />
-        <Collapse title="équipement" content={equipments} />
-      </div>
+        </>
+      ) : (
+        <p>Loading...</p>
+      )}
     </main>
   );
 };

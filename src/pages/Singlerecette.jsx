@@ -22,11 +22,11 @@ const Singlerecette = () => {
       {recipe ? (
         <>
           <div className="container">
-            <h1 className="title">{recipe.title.rendered}</h1>
+            <h1 className="title" dangerouslySetInnerHTML={{ __html: recipe.title.rendered }} />
             <div className="recipe">
-              <div className="recipe_featuredImageContainer">
+              {/* <div className="recipe_featuredImageContainer">
                 <img className="recipe_featuredImageContainer__img" src={recipe.better_featured_image.source_url} alt="" />
-              </div>
+              </div> */}
               <div className="m-wysiwyg" dangerouslySetInnerHTML={{ __html: recipe.content.rendered }} />
             </div>
           </div>
