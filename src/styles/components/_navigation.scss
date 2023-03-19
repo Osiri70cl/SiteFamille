@@ -4,7 +4,11 @@
   justify-content: space-between;
   height: 100px;
   align-items: center;
-  margin: 40px 100px;
+  margin: 24px auto 0px auto;
+  @media screen and (max-width: 768px) {
+    margin: 12px auto 0px auto;
+    flex-direction: column;
+  }
   ul {
     display: flex;
 
@@ -34,9 +38,15 @@
   .partie {
     &__gauche {
       font-size: 40px;
+      @media screen and (max-width: 768px) {
+        font-size: 24px;
+      }
     }
     &__droite {
       font-size: 25px;
+      @media screen and (max-width: 768px) {
+        font-size: 18px;
+      }
     }
   }
 }

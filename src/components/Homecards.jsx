@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Homecards = () => {
   return (
-    <article>
+    <article className="homeCards">
       <Link to="/categorie">
         <div className="card">
           <div className="card__bg__white">

@@ -18,14 +18,16 @@ const Poisson = () => {
     console.log(posts);
   
     return (
-      <section className="home__products">
-        {posts.map(post => (
-          <article key={post.id}>
-            <NavLink to={`/Singlerecette/${post.id}`}>
-              <Cards id={post.id} image={post.better_featured_image} />
-            </NavLink>
-          </article>
-      ))}
+      <section className="container">
+        <div className="home__products">
+          {posts.map(post => (
+            <article key={post.id}>
+              <NavLink to={`/Singlerecette/${post.id}`}>
+                <Cards id={post.id} image={post.better_featured_image} />
+              </NavLink>
+            </article>
+          ))}
+        </div>
       </section>
     );
   }

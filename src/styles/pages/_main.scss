@@ -1,6 +1,9 @@
 .main {
-  margin: 0px 100px;
+  padding: 40px 100px;
   height: 100%;
+  @media screen and (max-width: 768px) {
+    padding: 20px 12px;
+  }
 }
 
 .homeSection {

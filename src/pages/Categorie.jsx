@@ -11,8 +11,9 @@ import CardsCategories from "../components/CardsCategories";
 
 const Categorie = () => {
   return (
-    <section className="home__categorie">
-        <article  className="home__article">
+    <section className="container">
+      <div className='home__categorie'>
+      <article  className="home__article">
           <Link to={`/categorie/entree`}>
             <CardsCategories image={coverEntree} title="Entrée" />
           </Link>
@@ -47,6 +48,7 @@ const Categorie = () => {
             <CardsCategories image={coverVin} title="Vin" />
           </Link>
         </article>
+      </div>
     </section>
   );
 };

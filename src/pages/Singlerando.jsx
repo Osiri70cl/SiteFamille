@@ -20,7 +20,7 @@ const Singlerando = () => {
             {rando ? (
         <>
           <div className="container">
-            <h1 className="title">{rando.title.rendered}</h1>
+            <h1 className="title" dangerouslySetInnerHTML={{ __html: rando.title.rendered }} />
             <div className="recipe">
               {/* <div className="recipe_featuredImageContainer">
                 <img className="recipe_featuredImageContainer__img" src={recipe.better_featured_image.source_url} alt="" />

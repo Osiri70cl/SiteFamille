@@ -18,7 +18,8 @@ const Entree = () => {
     console.log(posts);
   
     return (
-      <section className="home__products">
+      <section className="container">
+        <div className="home__products">
         {posts.map(post => (
           <article key={post.id}>
             <NavLink to={`/Singlerecette/${post.id}`}>
@@ -26,6 +27,7 @@ const Entree = () => {
             </NavLink>
           </article>
       ))}
+      </div>
       </section>
     );
   }

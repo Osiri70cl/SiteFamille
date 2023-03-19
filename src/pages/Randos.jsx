@@ -18,7 +18,8 @@ const Randos = () => {
     console.log(randos);
   
     return (
-      <section className="home__products">
+      <section className='container' >
+        <div className="home__products">
         {randos.map(rando => (
           <article key={rando.id}>
             <NavLink to={`/randos/${rando.id}`}>
@@ -26,6 +27,7 @@ const Randos = () => {
             </NavLink>
           </article>
       ))}
+      </div>
       </section>
     );
   }

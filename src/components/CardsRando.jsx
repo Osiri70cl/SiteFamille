@@ -22,8 +22,7 @@ const Cards = (props) => {
     <div className="thumb">
       <img src={image.source_url} alt="" className="thumb__img" />
       <div className="thumb__overlay"></div>
-      <h2 className="thumb__title">{rando.title && rando.title.rendered}</h2>
-      <p>{rando.excerpt && rando.excerpt.rendered}</p>
+      <h2 className="thumb__title" dangerouslySetInnerHTML={{ __html: rando.title && rando.title.rendered }} />
     </div>
   );
 };
