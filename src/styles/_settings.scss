@@ -53,9 +53,6 @@ a {
 
 .m-wysiwyg {
   padding: 12px;
-  @media screen and (max-width: 768px) {
-    padding: 0;
-  }
   h2 {
       font-size: 29px;
       font-weight: 400;
@@ -214,4 +211,7 @@ a {
 }
 .wp-block-column {
   width: 50%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 }
